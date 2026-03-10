@@ -33,7 +33,7 @@ Results can be exported to CSV for campaign use.
 ----------
 
 # Quick Start
-Check releases to download the desktop app to get started quickly. Download the Test Data file to get started.
+Check releases to download the desktop app to get started quickly. Download the Test Data file (fake_nationbuilder_transactions.csv) to get started.
 
 # Normal Start Method
 Clone the repo:
