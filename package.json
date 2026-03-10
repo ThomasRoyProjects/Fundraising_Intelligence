@@ -1,0 +1,61 @@
+{
+  "name": "eda-intelligence",
+  "version": "2.0.0",
+  "description": "Fundraising Intelligence Desktop App",
+  "author": "Thomas Roy",
+  "private": true,
+  "main": "build/electron/main.js",
+
+  "scripts": {
+    "dump": "dump-stlite-desktop-artifacts",
+    "serve": "cross-env NODE_ENV=production electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+
+  "devDependencies": {
+    "@stlite/desktop": "^0.93.0",
+    "cross-env": "^7.0.3",
+    "electron": "^31.0.0",
+    "electron-builder": "^26.8.1"
+  },
+
+  "build": {
+    "appId": "ca.fundraising.intelligence",
+    "productName": "Fundraising Intelligence",
+    "directories": {
+      "output": "dist"
+    },
+
+    "files": [
+      "build/**/*",
+      "app/**/*",
+      "package.json"
+    ],
+
+    "mac": {
+      "category": "public.app-category.business",
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+
+    "asar": false
+  },
+
+  "stlite": {
+    "desktop": {
+      "entrypoint": "app/fundraising_dashboard.py",
+
+      "files": [
+        "app/**/*"
+      ],
+
+      "requirements": [
+        "pandas==2.1.4",
+        "numpy==1.26.4"
+      ]
+    }
+  }
+}
