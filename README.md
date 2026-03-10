@@ -33,7 +33,9 @@ Results can be exported to CSV for campaign use.
 ----------
 
 # Quick Start
+Check releases to download the desktop app to get started quickly. Download the Test Data file to get started.
 
+# Normal Start Method
 Clone the repo:
 
 git clone https://github.com/ThomasRoyProjects/Fundraising_Intelligence  
